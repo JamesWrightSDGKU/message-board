@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                         primary_key=True, 
                         serialize=False, 
                         verbose_name='ID'
-                    )
+                    ),
                 ),
                 ('title', models.CharField(max_length=128)),
                 ('subtitle', models.CharField(max_length=256)),
