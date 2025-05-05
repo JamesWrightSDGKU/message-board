@@ -22,39 +22,19 @@
                 class="navbar-toggler" 
                 type="button" 
                 data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
+                data-bs-target="#navbarNavAltMarkup" 
+                aria-controls="navbarNavAltMarkup" 
                 aria-expanded="false" 
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'home' %}">Home</a></li>
-                            <li><a class="dropdown-item" href="{% url 'list' %}">Posts</a></li>
-                            <li><a class="dropdown-item" href="{% url 'new' %}">New Post</a></li>
-                            <li><a class="dropdown-item" href="{% url 'about' %}">About</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link" href="{% url 'list' %}">Posts</a>
+                    <a class="nav-link" href="{% url 'new' %}">New Post</a>
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </div>
             </div>
         </div>
     </nav>
